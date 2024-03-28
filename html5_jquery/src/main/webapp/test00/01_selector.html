@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>01_selector.html</title>
+<style>
+.bg {
+	background-color: yellow;
+}
+.horizontal {
+	float: left;
+	list-style: none;
+	margin: 10px;
+}
+</style>
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// 1. li > u 를 찾아서 배경색을 yellow로
+		$('li > u').addClass('bg');
+		
+		// 2. id가 "my"인 요소를 찾고, 자식요소중 li들만 horizontal를 적용
+		$('my > li').addClass('horizontal');
+		
+		// 3.id 값이 jqeury를 찾아서 onclick 이벤트 
+		$('#jquery').click(function(){
+			alert("클릭 됨!");
+			
+		});
+	});
+</script>
+</head>
+<body>
+	<ul id="my">
+		<li><u>Java</u></li>
+		<li>HTML5</li>
+		<li></li>
+		<li class="sil">CSS3</li>
+		<li id="jquery">j<u>Q</u>ery</li>
+
+	</ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID 셀렉터 연습2 ready() : jQuery2.html</title>
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+		
+		});	
+		function addHtml() {
+			$("#article").html("<b>안녕?<b>"+"<br>");
+		}
+		
+		function addTag(){
+			var pTag = document.getElementById("article");
+			pTaghtml("<b>안녕?<b>"+"<br>");
+			"이건 참고용!!";
+		}
+	</script>
+</body>
+	<div>
+		<p id="article"></p>
+		
+	</div>
+	<input type="button" value="추가" onclick="addHtml()">
+</html>
